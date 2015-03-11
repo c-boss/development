@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head></h:head>
+<body>
+	<!-- <hr />
+	<div id="fileName"></div>
+	<div id="fileSize"></div>
+	<div id="fileType"></div>
+	<hr />
+	<h:form id="fileToUploadForm" enctype="multipart/form-data">
+		<input id="fileToUpload" onchange="fileSelected();" type="file"
+			multiple="multiple" />
+		<h:commandButton type="button" onclick="uploadFile()" value="Upload" />
+	</h:form>
+	<hr />
+	<div id="uploadStatus"></div>
+	<table class="attachments">
+
+
+	</table>
+	<hr /> -->
+
+	<p:fileUpload fileUploadListener="#{fileUploadBean.upload}"
+	  allowTypes="/(\.|\/)(gif|jpe?g|png|zip|rar|war)$/" sizeLimit="104857600"
+		description="Select Images" />
+
+
+</body>
+</html>
