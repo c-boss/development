@@ -4,8 +4,6 @@ import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 
-import org.primefaces.event.FileUploadEvent;
-
 
 
 
@@ -21,8 +19,5 @@ public class FileUploadBean {
 		this.files = files;
 	}
 	
-	public void upload(FileUploadEvent event) {      
-        System.out.println("file name"  + event.getFile().getFileName());
- 
-    }  
+	 
 }
