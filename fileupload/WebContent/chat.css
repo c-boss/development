@@ -1,0 +1,313 @@
+.chatbox {
+	position: fixed;
+	position: expression("absolute");
+	width: 225px;
+	display: none;
+	z-index: 99;
+}
+
+.chatboxhead {
+  background-color: #888888;
+  border-left: 1px solid #888888;
+  border-right: 1px solid #888888;
+  color: #FFFFFF;
+  padding: 2px 7px;
+}
+
+.chatboxblink {
+	background-color: #176689;
+	border-right: 1px solid #176689;
+	border-left: 1px solid #176689;
+}
+
+.chatboxcontent {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #EEEEEE;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	color: #333333;
+	font-size: 13px;
+	height: 190px;
+	line-height: 1.3em;
+	overflow: auto;
+	padding: 0 7px;
+	width: 209px;
+}
+
+.chatboxinput {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	position: relative;
+}
+
+.chatboxtextarea {
+	height: 35px !important;
+	line-height: 35px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 221px;
+}
+
+.chatboxtextarea:focus {
+	border-color: #D5D5D5 !important;
+	box-shadow: none !important;
+}
+
+.chatboxtextareaselected {
+	/* border: 2px solid #f99d39; */
+	margin: 0;
+}
+
+.chatboxmessage {
+	padding: 5px;
+}
+
+.send-message .chatboxmessagecontent {
+	margin-right: 0;
+}
+
+.chatboxmessagecontent {
+	background-color: #E4E6E9;
+	border-radius: 4px;
+	margin-right: 40px;
+	padding: 7px;
+	position: relative;
+	word-wrap: break-word;
+}
+
+.chatboxmessagecontent:before {
+	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #E4E6E9;
+	border-style: solid;
+	border-width: 8px;
+	content: "";
+	position: absolute;
+	right: -16px;
+	top: 7px;
+}
+
+.receive-message .chatboxmessagecontent {
+	margin-right: 0px;
+	margin-left: 40px;
+}
+
+.receive-message .chatboxmessagecontent:before {
+	border-color: rgba(0, 0, 0, 0) #E4E6E9 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+	left: -16px;
+	right: auto;
+}
+
+.chatboxmessage .sender {
+	float: left;
+}
+
+.sender img {
+  height: 30px;
+  width: 30px;
+}
+
+.chatboxinfo {
+	margin-left: -1em;
+	color: #666666;
+}
+
+.chatboxmessagefrom {
+	font-weight: bold;
+}
+
+.chatboxmessagecontent {
+	
+}
+
+.chatboxmessagedate {
+	display: none;
+}
+
+.chatboxoptions {
+	float: left;
+}
+
+.chatboxoptions a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.chatboxtitle {
+	float: right;
+	
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  white-space: nowrap;
+  width: 175px;
+}
+
+
+.emotions {
+	color: #FF9900;
+	cursor: pointer;
+	font-size: 19px;
+	left: 10px;
+	position: absolute;
+	top: 2px;
+}
+
+.emotions:hover {
+	color: #FF9900 !important;
+}
+
+.emoticon-icon {
+	background-image: url("../resources/images/emoticons.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	height: 32px;
+	width: 32px;
+}
+
+span.emoticon-icon {
+  cursor: default;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span.emoticon-icon:hover {
+	outline: none !important;
+}
+
+.emoticon-icon:hover {
+	outline: 1px dashed #555555 !important;
+}
+
+.emoticon-icon.laugh {
+	background-position: -27px -21px;
+}
+
+.emoticon-icon.sad {
+	background-position: -97px -21px;
+}
+
+.emoticon-icon.angle {
+	background-position: -236px -141px;
+}
+
+.emoticon-icon.tongue {
+	background-position: -307px -21px;
+}
+
+.emoticon-icon.like {
+	background-position: -517px -81px;
+}
+
+.emoticon-icon.angry {
+	background-position: -447px -81px;
+}
+
+.emoticon-icon.smile {
+	background-position: -518px -21px;
+}
+
+.emoticon-icon.devil {
+	background-position: -97px -321px;
+}
+
+.emoticon-icon.bye {
+	background-position: -167px -262px;
+}
+
+.emoticon-icon.dizzy {
+	background-position: -27px -262px;
+}
+
+.emoticon-icon.shouting {
+	background-position: -238px -262px;
+}
+
+.emoticon-icon.thinking {
+	background-position: -377px -81px;
+}
+
+.emoticon-icon.cloon {
+	background-position: -168px -321px;
+}
+
+.emoticon-icon.ghost {
+	background-position: -449px -439px;
+}
+
+.emoticon-icon.cat {
+	background-position: -308px -320px;
+}
+
+.emoticon-icon.music {
+	background-position: -168px -140px;
+}
+
+.emoticon-icon.cry {
+	background-position: -168px -201px;
+}
+
+.emoticon-icon.cake {
+	background-position: -98px -382px;
+}
+
+.emoticon-icon.boom {
+	background-position: -25px -382px;
+}
+
+.emoticon-icon.clock {
+	background-position: -237px -440px;
+}
+
+.emoticon-icon.envelop {
+	background-position: -307px -440px;
+}
+
+.emoticon-icon.idea {
+	background-position: -27px -139px;
+}
+
+.emoticon-icon.cup {
+	background-position: -98px -441px;
+}
+
+.emoticon-icon.sick {
+	background-position: -307px -141px;
+}
+
+.emoticon-icon.shutup {
+	background-position: -237px -21px;
+}
+
+.popover {
+	position: fixed !important;
+}
+
+.chatboxcontent .select2-container{
+	width: 100%;
+}
+.chatboxcontent .multi-users-wrapper {
+  background-color: #EEEEEE;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease 0s;
+  width: 95%;
+  z-index: 1;
+}
+
+.chatboxcontent .multi-users-wrapper.open{
+	transform: translateY(0);
+}
+.add-multiusers-btn {
+  margin-right: 5px;
+  margin-top: 5px;
+}
